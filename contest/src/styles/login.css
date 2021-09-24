@@ -1,0 +1,89 @@
+
+body{
+  font-family: 'Montserrat',sans-serif;
+}
+.container{
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none;
+  height: 92vh;
+  width: 500px;
+  position: relative;
+  color: black;
+}
+
+.container > h1 {
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.input-field{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+
+}
+
+.input-field span {
+  border-bottom: solid rgba(0, 0, 0, 0.76) 1px ;
+}
+
+.input-field  h2 {
+  font-weight: bold;
+  display: block;
+}
+
+.input-field .fa {
+  color: #FE6F27;
+}
+
+.input-field  input {
+  border: none;
+  font-size: large;
+  padding:5px;
+  width: 80%;
+}
+span:last-child {
+  margin-bottom: 35px;
+}
+.input-field  input:focus{
+  appearance: none;
+  outline: none;
+  border-color: none;
+}
+
+.container button{
+  
+   display: flex;
+  width: 150px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  background-color: #FE6F27;
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container p{
+font-size:medium;
+text-align: center;
+font-weight: bold;
+
+}
+.container p a{
+color: #FE6F27;
+text-decoration: none;
+  
+}
+
+.box-wave{
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+}

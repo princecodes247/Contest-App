@@ -1,0 +1,56 @@
+.vote-form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: fit-content;
+    width: 700px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.votes-box{
+    display: flex;
+    flex-direction: column;
+}
+.votes-box h2{
+font-size: 20px;
+font-weight: bold;
+color: #FE6F27;
+}
+
+.votes-box select, .votes-box input {
+    display: flex;
+    height: 35px;
+    border: none ;
+    outline: none;
+    border:solid #000000a2 2.5px;
+    padding: 2px 2px;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+.vote-form button{
+    width: 120px;
+    height: 60px;
+    background-color: #FE6F27;
+    border: solid white 1px;
+    color: white;
+    font-size: larger;
+    border-radius: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.vote-form .same-row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: -15px;
+}
+
+.same-row .votes-box {
+    width: 46%;
+}
