@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Header from "./header";
-import "./styles/votes.css";
+import "../styles/votes.css";
 
 const BuyVotes = () => {
 
-  
+// Values for the cost per vote, the contests and contest-participants are to be gotten via an axios fetch  but they are hardcoded for now
   const [costPerVote, setCostPerVote] = useState(200);
   const [votesNumber, setVotesNumber] = useState(0);
 	const [totalVotes, setTotalVotes] = useState(0);
@@ -24,6 +24,9 @@ const BuyVotes = () => {
           <h2> Choose contest you wish to vote for</h2>
 
           <select>
+          {/* {contests.map((contest) => (
+          <option value={contest}> {contest} </option>
+        ))} */}
             <option value="Dancing Competition"> Dancing Competition </option>
             <option value="Music Competition">Music Competition</option>
             <option value="Fitness Competition">Fitness Competition</option>
@@ -34,6 +37,9 @@ const BuyVotes = () => {
           <h2> Choose a Contestant </h2>
 
           <select>
+             {/* {contestant.map((contestant) => (
+          <option value={contestant}> {contestant} </option>
+        ))} */}
             <option value="Jin Mori"> Jin Mori </option>
             <option value="Yoo Mira">Yoo Mira</option>
             <option value="Han Daewi">Han Daewi</option>

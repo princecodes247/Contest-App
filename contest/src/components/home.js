@@ -1,5 +1,10 @@
 import React from "react";
 import Header from "./header";
+import img1 from "../assets/zhanarys-dakhiyev-WMlRkqt1vII-unsplash.jpg";
+import img2 from "../assets/sigmund-jzz_3jWMzHA-unsplash.jpg";
+import img3 from "../assets/radu-florin-4_QFycgpC4c-unsplash.jpg";
+import img4 from "../assets/raphael-lovaski-xQSim-3LgCQ-unsplash.jpg";
+import img5 from "../assets/undraw_skateboard_d6or.svg";
 
 
 const Home = () => {
@@ -49,35 +54,35 @@ const Home = () => {
 <div class="center-grid space-between ">
   <div class="profile profile-adjust">
     <div class="image-cropper profile-reduce">
-      <img src="./assets/sigmund-jzz_3jWMzHA-unsplash.jpg" />
+      <img src={img1} />
     </div>
     <h3>Miles Morales</h3>
     <p>UI/UX Designer</p>
   </div>
   <div class="profile profile-adjust">
     <div class="image-cropper profile-reduce">
-      <img src="./assets/zhanarys-dakhiyev-WMlRkqt1vII-unsplash.jpg" />
+      <img src={img2} />
     </div>
     <h3>John Camwood</h3>
     <p>Poject Manager</p>
   </div>
   <div class="profile profile-adjust">
     <div class="image-cropper profile-reduce">
-      <img src="./assets/sigmund-jzz_3jWMzHA-unsplash.jpg" />
+      <img src={img1} />
     </div>
     <h3>Miles Morales</h3>
     <p>UI/UX Designer</p>
   </div>
   <div class="profile profile-adjust">
     <div class="image-cropper profile-reduce">
-      <img src="./assets/zhanarys-dakhiyev-WMlRkqt1vII-unsplash.jpg" />
+      <img src={img2} />
     </div>
     <h3>John Camwood</h3>
     <p>Poject Manager</p>
   </div>
   <div class="profile profile-adjust">
     <div class="image-cropper profile-reduce">
-      <img src="./assets/zhanarys-dakhiyev-WMlRkqt1vII-unsplash.jpg" />
+      <img src={img2} />
     </div>
     <h3>John Camwood</h3>
     <p>Poject Manager</p>
@@ -87,28 +92,28 @@ const Home = () => {
 <div class="center-grid space-between">
   <div class="profile profile-adjust">
     <div class="image-cropper profile-reduce">
-      <img src="./assets/sigmund-jzz_3jWMzHA-unsplash.jpg" />
+      <img src={img1} />
     </div>
     <h3>Miles Morales</h3>
     <p>UI/UX Designer</p>
   </div>
   <div class="profile profile-adjust">
     <div class="image-cropper profile-reduce">
-      <img src="./assets/zhanarys-dakhiyev-WMlRkqt1vII-unsplash.jpg" />
+      <img src={img2} />
     </div>
     <h3>John Camwood</h3>
     <p>Poject Manager</p>
   </div>
   <div class="profile profile-adjust">
     <div class="image-cropper profile-reduce">
-      <img src="./assets/sigmund-jzz_3jWMzHA-unsplash.jpg" />
+      <img src={img1} />
     </div>
     <h3>Miles Morales</h3>
     <p>UI/UX Designer</p>
   </div>
   <div class="profile profile-adjust">
     <div class="image-cropper profile-reduce">
-      <img src="./assets/zhanarys-dakhiyev-WMlRkqt1vII-unsplash.jpg" />
+      <img src={img2} />
     </div>
     <h3>John Camwood</h3>
     <p>Poject Manager</p>
@@ -118,21 +123,21 @@ const Home = () => {
 <div class="center-grid space-between ">
   <div class="profile profile-adjust">
     <div class="image-cropper profile-reduce">
-      <img src="./assets/sigmund-jzz_3jWMzHA-unsplash.jpg" />
+      <img src={img1} />
     </div>
     <h3>Miles Morales</h3>
     <p>UI/UX Designer</p>
   </div>
   <div class="profile profile-adjust">
     <div class="image-cropper profile-reduce">
-      <img src="./assets/zhanarys-dakhiyev-WMlRkqt1vII-unsplash.jpg" />
+      <img src={img2} />
     </div>
     <h3>John Camwood</h3>
     <p>Poject Manager</p>
   </div>
   <div class="profile profile-adjust">
     <div class="image-cropper profile-reduce">
-      <img src="./assets/sigmund-jzz_3jWMzHA-unsplash.jpg" />
+      <img src={img1} />
     </div>
     <h3>Miles Morales</h3>
     <p>UI/UX Designer</p>
@@ -145,39 +150,39 @@ const Home = () => {
 
   <div class="profile profile-adjust">
       <div class="image-cropper profile-reduce">
-        <img src="./assets/sigmund-jzz_3jWMzHA-unsplash.jpg" />
+        <img src={img1} />
       </div>
       <h3>2016 Winner</h3>
       <p> Fine & Applied Art</p>
     </div>
     <div class="profile profile-adjust">
       <div class="image-cropper profile-reduce">
-        <img src="./assets/zhanarys-dakhiyev-WMlRkqt1vII-unsplash.jpg" />
+        <img src={img2} />
       </div>
       <h3>2020 Winner</h3>
       <p>Mens' Fitness</p>
     </div>
     <div class="profile profile-adjust">
       <div class="image-cropper profile-reduce">
-        <img src="./assets/radu-florin-4_QFycgpC4c-unsplash.jpg" />
+        <img src={img3} />
       </div>
       <h3>2015 Winner</h3>
       <p>Photography</p>
     </div>
     <div class="profile profile-adjust">
       <div class="image-cropper profile-reduce">
-        <img src="./assets/raphael-lovaski-xQSim-3LgCQ-unsplash.jpg" />
+        <img src={img4} />
       </div>
       <h3>2018 Winner</h3>
       <p>Make-Up Artistry</p>
     </div>
 </div>
 <div class="banner">
-  <div class="banner-text">
+  <div class="banner-text full-length">
      <h2 className="reduce-size"> Get Discovered & Achieve More! </h2> 
      <button> Sign up to our newsletter </button>
   </div>
- <div class="svg"><img src="./assets/undraw_skateboard_d6or.svg"/></div> 
+ <div class="svg hidden-sm hidden-md"><img src={img5}/></div> 
 </div>
     </React.Fragment>
   );

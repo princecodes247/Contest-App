@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "./styles/login.css";
-import img1 from "./assets/wave.svg";
+import "../styles/login.css";
+import { Link } from "react-router-dom";
+import img1 from "../assets/wave.svg";
 
 
 
@@ -31,7 +32,7 @@ const Login = () => {
 			  
 			  <button> Login </button>
 
-			  <p className="padding"> If you don't have an account, you can <a href="/signup"> sign up here </a></p>
+			  <p className="padding"> If you don't have an account, you can <Link to="/signup"> sign up here </Link></p>
 			  <img className="box-wave" src={img1}/>
 			</div>
     </React.Fragment>

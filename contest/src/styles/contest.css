@@ -11,11 +11,13 @@
 .contest-details-hero{
     display: flex;
     flex-direction: column;
-    background: url(../assets/raphael-lovaski-xQSim-3LgCQ-unsplash.jpg);
-    background-size: cover;
-    height: 500px;
+    height: 700px;
     margin-bottom: 50px;
     position: relative;
+}
+.contest-details-hero img{
+   width: auto;
+   height: 100%;
 }
 
 .contest-hero span{
@@ -33,9 +35,11 @@
 
 .contest-img{
     width: 50%;
-    background: url(../assets/raphael-lovaski-xQSim-3LgCQ-unsplash.jpg);
-    background-size: cover;
-    
+    height: inherit;    
+}
+.contest-img img{
+    width: 100%;   
+    height: auto;
 }
 
 .contest-info{
@@ -44,6 +48,7 @@
 }
 .contest-text{
     display: flex;
+    width: 50%;
     flex-direction: column;
     padding: 28px;
 }
