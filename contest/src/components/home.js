@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./header";
+import { Link } from 'react-router-dom';
 import img1 from "../assets/zhanarys-dakhiyev-WMlRkqt1vII-unsplash.jpg";
 import img2 from "../assets/sigmund-jzz_3jWMzHA-unsplash.jpg";
 import img3 from "../assets/radu-florin-4_QFycgpC4c-unsplash.jpg";
@@ -19,8 +20,8 @@ const Home = () => {
     Meet your match and make your mark on the global community 24/7.
   </p>
   <span
-    ><button class="enter"> <a className="reduce-p-size" href="/contest">Enter a Contest</a></button>
-    <button class="sponsor"> <a className="reduce-p-size" href="/buy-votes">Cast your Votes</a></button></span
+    ><button class="enter"> <Link className="reduce-p-size" to="/contest">Enter a Contest</Link></button>
+    <button class="sponsor"> <Link className="reduce-p-size" to="/buy-votes">Cast your Votes</Link></button></span
   >
 </div>
 </div>

@@ -51,7 +51,7 @@ body {
   .profile-adjust{
     margin-left: 0px !important;
     margin-bottom: 20px !important;
-    font-size: .8rem;
+    font-size: .7rem;
   }
 
   .space-between{
@@ -61,8 +61,8 @@ body {
   }
 
   .profile-reduce{
-    width: 100px !important;
-    height:100px !important;
+    width: 80px !important;
+    height:80px !important;
     font-size: .45rem;
   }
 
@@ -82,6 +82,7 @@ body {
       width: 80% !important;
     }
     .full-length-m2{
+      width: 96% !important;
       padding: 10px 10px;
       height: 48vw !important;
     }
@@ -198,6 +199,7 @@ header li {
 .hero {
   background: url(./assets/ramu_aladdin-atCtHV2JDCM-unsplash.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 750px;
   display: -webkit-box;
@@ -506,6 +508,7 @@ header li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+          align-items: center;
   text-align: center;
   margin-left: 75px;
   margin-bottom: 35px;
