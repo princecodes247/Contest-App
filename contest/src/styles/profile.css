@@ -1,0 +1,94 @@
+
+.container{
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+    height: auto;
+    min-height: 92vh;
+    width: 500px;
+    position: relative;
+    color: black;
+  }
+  
+.save-btn {
+    transform: scale(0.6);
+}
+
+.profile-pic-cont {
+    width: 100px;
+    overflow: hidden;
+    height: 100px;
+    background-color: #eaeaea;
+    border-radius: 50%;
+    border-style: dotted;
+    border-color: #FE6F27;
+    border-width: 2px;
+    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.profile-pic {
+    height: 100px;
+}
+
+.profile-pic-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+}
+.profile-cover {
+    position: relative;
+}
+
+.file-input * {
+    visibility: hidden;
+
+}
+.file-input {
+    background-color: #ddd;
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    bottom: -13%;
+    left: 30%;
+    transform: scale(0.6);
+}
+
+.file-input:hover {
+    background-color: #bbb;
+}
+.file-input::before {
+    position: absolute;
+    content: "Select an image";
+    color: black;
+    font-size: 0.7em
+
+}
+
+.box-wave {
+    position: relative;
+    width: 100%;
+    bottom: -10px;
+}
+
+.red-text {
+    font-weight: 100 !important;
+    font-size: 0.8em !important;
+    color: rgb(216, 42, 42);
+}
+.green-text {
+    font-weight: 100 !important;
+    font-size: 0.8em !important;
+    color: rgb(54, 179, 54);
+}
