@@ -68,12 +68,16 @@ const Profile = () => {
 				  <h2> Change Username</h2>
 				  <span> <i className="fa fa-user"></i>  <input type="text" placeholder=" Type your Username"  value={username}
                     onChange={handleChange} /></span>
+                    {/* USERNAME CHANGED ALERT */}
+                    <p className={passwordAlert.class}>{passwordAlert.text}</p>
             <button className="save-btn">Save Username</button>
             </div>
             <div className="input-field">
             <h2> Change Email Address</h2>
             <span> <i className="fa fa-user"></i>  <input type="text" placeholder=" Type your Email"  value={email}
             onChange={handleChange2} /></span>
+            {/* EMAIL CHANGED ALERT */}
+            <p className={passwordAlert.class}>{passwordAlert.text}</p>
             <button className="save-btn">Save Email</button>
             </div>
             <div className="input-field">
