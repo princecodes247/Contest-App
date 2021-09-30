@@ -6,8 +6,18 @@ body {
   background-color: #161616;
 }
 
+button:hover {
+  background-color: #eb6826;
+}
+button:active {
+  opacity: 0.8;
+}
 .fas{
   color: #FE6F27;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 

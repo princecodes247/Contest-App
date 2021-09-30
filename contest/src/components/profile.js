@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import "../styles/login.css";
 import "../styles/profile.css";
 import { Link } from "react-router-dom";
 import img1 from "../assets/wave.svg";
 import img2 from "../assets/zhanarys-dakhiyev-WMlRkqt1vII-unsplash.jpg";
 import FileBase64 from 'react-file-base64';
-
+import ContestItem from "./contestItem";
 const Profile = () => {
 	
 
 	const [username, setUsername] = useState("");
+  const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
 	const [newPassword, setNewPassword] = useState("");
 	const [password, setPassword] = useState("");
@@ -53,7 +53,8 @@ const Profile = () => {
     <React.Fragment>
 		  <form onSubmit={handleSubmit} className="container reduce-form">
 			  <h1> Profile </h1>
-            <div class="profile-pic-input profile-adjust">
+        <div className="sect--row">
+          <div className="profile-pic-input profile-adjust">
                 <span className="profile-cover">
                 <div className="image-cropper profile-pic-cont" style={{background: `url(${profilePic}) no-repeat 50% 50%`}}>
                 {/* <img className="profile-pic" src={profilePic} /> */}
@@ -62,36 +63,24 @@ const Profile = () => {
                 <FileBase64 multiple={false} onDone={handleProfilePic}/>
                 </label>
                 </span>
-                <button className="save-btn">Save Picture</button>
             </div>
-                <div className="input-field">
-				  <h2> Change Username</h2>
-				  <span> <i className="fa fa-user"></i>  <input type="text" placeholder=" Type your Username"  value={username}
-                    onChange={handleChange} /></span>
-                    {/* USERNAME CHANGED ALERT */}
-                    <p className={passwordAlert.class}>{passwordAlert.text}</p>
-            <button className="save-btn">Save Username</button>
+				  <div className="profile-info">
+          <h2>Peter{fullName}</h2>
+          <p className="profile-username">@{username}</p>
+          <p>tasker@gmail.com</p>
+          </div>
+        </div>
+           <div>
+            <h2 className="pad1">Participating in</h2>
+            <div className="sect--col contests">
+              <ContestItem contestName="SAmmy Loaded" contestCreator="Samuel" contestPic={profilePic} launchDate="1652050800000" voteCost="200" prizes={["1500","1000","200"]}/>
+              <ContestItem contestName="SAmmy Loaded" contestCreator="Samuel" contestPic={profilePic} launchDate="1652050800000" voteCost="200" prizes={["1500","1000","200"]}/>
             </div>
-            <div className="input-field">
-            <h2> Change Email Address</h2>
-            <span> <i className="fa fa-user"></i>  <input type="text" placeholder=" Type your Email"  value={email}
-            onChange={handleChange2} /></span>
-            {/* EMAIL CHANGED ALERT */}
-            <p className={passwordAlert.class}>{passwordAlert.text}</p>
-            <button className="save-btn">Save Email</button>
-            </div>
-            <div className="input-field">
-				  <h2> Change Password</h2>
-				  <span> <i className="fa fa-lock"></i> <input type="password" placeholder=" Old Password"  value={password}
-            onChange={handleChange3}/> </span>
-            <span> <i className="fa fa-lock"></i> <input type="password" placeholder=" New Password"  value={newPassword}
-            onChange={handleChange4}/> </span>
-            <p className={passwordAlert.class}>{passwordAlert.text}</p>
-            <button className="save-btn">Save Password</button>
-                </div>
-            
-			
-
+           </div>
+          
+             <button>
+              Sign Out
+             </button>
 			  
 			  
 
