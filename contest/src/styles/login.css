@@ -5,6 +5,7 @@ body{
 .container{
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
+  padding-bottom: 120px;
   border-radius: 10px;
   border: none;
   height: 92vh;
